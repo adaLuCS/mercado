@@ -1,0 +1,23 @@
+{
+  "name": "mercado",
+  "version": "1.0.0",
+  "description": "Proyecto personal para practicar html y css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaLuCS/mercado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adaLuCS/mercado/issues"
+  },
+  "homepage": "https://github.com/adaLuCS/mercado#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
