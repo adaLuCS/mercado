@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #EAC926;
+    text-align: center;
+}
+/*
+@media only screen and (min-width: 460px) {
+    #banner { width:;}
+}*/
+
+div#compra {
+    text-align: center;
+}
+
+nav#navegador ul {
+    list-style-type: none;
+}
+
+i.fa-bars {
+    background-color: #03264C;
+    color: white;
+    border-radius: 15%;
+    padding: 5px;
+    margin: 1rem;
+}
+
+main img#banner {
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+}
