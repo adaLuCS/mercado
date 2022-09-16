@@ -1,0 +1,110 @@
+/* l O G I N */
+main form#login {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+main form#login input {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    width: 80%;
+    height: 30px;
+    max-width: 500px;
+    padding: 10px;
+    margin: 15px;
+}
+
+main form#login button {
+    background-color: #1259c3;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    height: 30px;
+    display: block;
+}
+/* * * * * * * * R E G I S T R O * * * * * * * */
+form#register {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form#register div#foto_perfil {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+
+form#register input.registro {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    width: 80%;
+    height: 30px;
+    max-width: 500px;
+    padding: 10px;
+    margin: 15px;
+}
+
+form#register input.fecha {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    width: 130px;
+    height: 30px;
+    max-width: 500px;
+    padding: 10px;
+    margin: 15px;
+}
+
+form#register label.etiqueta_titulo {
+    font-size: 14px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+form#register label.etiqueta {
+    font-size: 12px;
+    margin: 10px;
+}
+
+form#register div.perfil {
+    display: flex;
+    flex-direction: row;
+}
+
+form#register div#botones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form#register button#enviar {
+    background-color: #1259c3;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    width: 15%;
+    height: 30px;
+    display: block;
+    margin: 10px;
+}
+
+form#register button#borrar {
+    background-color: #1259c3;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    width: 15%;
+    height: 30px;
+    justify-content: left;
+    margin: 10px;
+}

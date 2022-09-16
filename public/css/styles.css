@@ -16,6 +16,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
 }
 
 /* HEADER------------------------------------------*/
@@ -51,6 +52,7 @@ header form#buscador button {
     cursor: pointer;
     float: right;
     border-radius: 25px;
+    margin: 5px;
 }
 
 div#compra {
@@ -208,13 +210,14 @@ footer i {
     #navegador {
         display: none;
     }
+
 }
 
 @media (min-width: 361px) {
 
     header {
-        align-items: baseline;
-        justify-content: space-around   ;
+        align-items: center;
+        justify-content: space-around;
     }
 
     article {
@@ -238,7 +241,7 @@ footer i {
 
     div#compra {
         width: 30%;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     header nav {

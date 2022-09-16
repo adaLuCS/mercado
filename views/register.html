@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MERCADO LIEBRE</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
 
@@ -46,7 +47,46 @@
     </header>
 
     <main>
+        <form id="register" action="/register" method="post">
 
+            <div id="foto_perfil">
+                <label for="foto_perfil" class="etiqueta_titulo">Selecciona una imagen para tu perfil: </label>
+                <input type="file" name="avatar" accept="image/*">
+            </div>
+
+            <input type="text" class="registro" name="name_complete" placeholder="Nombre y apellido">
+
+            <input type="text" class="registro" name="name" placeholder="Nombre del usuario">
+            <input type="password" class="registro" placeholder="Contraseña">
+            <input type="password" class="registro" placeholder="Confirmar Contraseña">
+
+            <label class="etiqueta_titulo">Fecha de nacimiento <input type="date" class="fecha"></label>
+
+            <input type="text" class="registro" name="domicilio" placeholder="Domicilio">
+
+            <label class="etiqueta_titulo">Perfil de usuario</label>
+            <div id="perfil">
+                <label for="perfil" class="etiqueta"><input type="radio" name="perfil_comprador" value="comprador"> Comprador</label>
+                <label for="perfil" class="etiqueta"><input type="radio" name="perfil_vendedor" value="vendedor"> Vendedor</label>
+            </div>
+
+            <label class="etiqueta_titulo">Interes</label>
+            <label for="interes" class="etiqueta"><input type="checkbox" name="interes_electro" value="Electro">
+                Electro</label>
+            <label for="interes" class="etiqueta"><input type="checkbox" name="interes_moda" value="Moda"> Moda</label>
+            <label for="interes" class="etiqueta"><input type="checkbox" name="interes_hogar" value="Hogar">
+                Hogar</label>
+            <label for="interes" class="etiqueta"><input type="checkbox" name="interes_juguete" value="Juguetería">
+                Juguetería</label>
+            <label for="interes" class="etiqueta"><input type="checkbox" name="interes_vida" value="Vida sana"> Vida
+                sana</label>
+
+            <div id="botones">
+                <button type="submit" id="borrar"><a href="/">Borrar</a></button>
+                <button type="submit" id="enviar"><a href="/">Enviar</a></button>
+            </div>
+
+        </form>
     </main>
 
     <footer>
