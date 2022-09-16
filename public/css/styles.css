@@ -216,7 +216,7 @@ footer div i:hover {
 /* * * * * M E D I A   T A B L E T* * * * */
 
 @media (min-width: 361px) {
-  
+
     header div#logo-mercado {
         width: 30%;
         padding: 10px;
@@ -265,7 +265,7 @@ footer div i:hover {
 /* * * * * M E D I A   D E S K T O P* * * * */
 
 @media (min-width: 769px) {
-    
+
     header nav#navegador {
         justify-content: space-between;
     }
