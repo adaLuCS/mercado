@@ -11,18 +11,22 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* * * * H E A D E R * * * */
+
 header {
     background-color: #EAC926;
+}
+
+header div#padre {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     align-items: center;
 }
 
-/* HEADER------------------------------------------*/
-#logo-mercado {
-    width: 50%;
+header div#logo-mercado {
+    width: 45%;
     padding: 10px;
+    flex-grow: 4;
 }
 
 header form#buscador {
@@ -31,7 +35,7 @@ header form#buscador {
     align-items: center;
     flex-grow: 4;
     font-size: 11px;
-    width: 50%;
+    width: 45%;
 }
 
 header form#buscador input {
@@ -41,12 +45,13 @@ header form#buscador input {
     width: 80%;
     height: 30px;
     max-width: 500px;
+    padding: 10px;
     flex: auto;
 }
 
 header form#buscador button {
     background-color: #ffffff;
-    width: 15%;
+    width: 30px;
     padding: 5px;
     border: none;
     cursor: pointer;
@@ -55,33 +60,30 @@ header form#buscador button {
     margin: 5px;
 }
 
-div#compra {
+header div#compra {
     text-align: center;
     justify-content: center;
     display: flex;
     flex-grow: 10;
 }
 
-header nav {
-    font-size: 12px;
-    margin-left: 20px;
+header nav#navegador {
     display: none;
 }
 
-nav#navegador ul {
-    list-style-type: none;
+header nav#navegador a {
     text-decoration: none;
-    padding: 2px;
+    color: black;
 }
 
-div#menu {
+header div#menu {
     text-align: center;
     justify-content: center;
     display: flex;
     flex-grow: 10;
 }
 
-i.fa-bars {
+header div#menu i.fa-bars {
     background-color: #1259c3;
     color: white;
     border-radius: 15%;
@@ -89,25 +91,18 @@ i.fa-bars {
     margin: 1rem;
 }
 
-/* HEADER------------------------------------------*/
-
-
-img#banner {
+/* * * * S E C T I O N * * * */
+section img#banner {
     width: 100%;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-/* MAIN------------------------------------------*/
+/* * * * M A I N * * * */
 main {
     width: 90%;
     margin: 0 auto;
 }
 
-h3.titular {
+main section h3.titular {
     font-size: 24px;
     margin: 2px;
 }
@@ -119,18 +114,18 @@ main section div.productos {
     flex-wrap: wrap;
 }
 
-article {
+main section div.productos article {
     margin: 10px 0px;
     background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
 }
 
-img.producto {
+main section div.productos article img.producto {
     width: 100%;
 }
 
-div.contenedor {
+main section div.productos article div.contenedor {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -140,7 +135,7 @@ div.contenedor {
     position: relative;
 }
 
-main section article i {
+main section div.productos article i {
     color: #39b54a;
     font-size: 16px;
     padding: 5px;
@@ -154,12 +149,12 @@ main section article i {
     top: -15px;
 }
 
-div.c-padre {
+main section div.productos article div.c-padre {
     display: flex;
     flex-wrap: wrap;
 }
 
-p.precio {
+main section div.productos article p.precio {
     font-size: 18px;
     display: flex;
     flex-direction: row;
@@ -167,7 +162,7 @@ p.precio {
     padding: 5px;
 }
 
-p.descuento {
+main section div.productos article p.descuento {
     font-size: 16px;
     color: #39b54a;
     display: flex;
@@ -176,61 +171,53 @@ p.descuento {
     padding: 5px;
 }
 
-h4.descripcion {
+main section div.productos article h4.descripcion {
     font-size: 16px;
     margin: 10px;
+    display: none;
 }
 
-/* MAIN------------------------------------------*/
-
-/* FOOTER------------------------------------------*/
+/* * * *  F O O T E R * * * */
 footer {
     margin: 10px;
 }
 
 footer div {
     text-align: center;
-    padding: 10%;
+    padding: 10px;
     background-color: #ffffff;
 }
 
-footer i {
+footer div i {
     font-size: 40px;
     background-color: #ffffff;
     color: #1259c3;
 }
 
-/* FOOTER------------------------------------------*/
+/* * * * * M O V I M I E N T O * * * * */
 
-@media (max-width: 360px) {
-    .descripcion {
-        display: none;
-    }
-
-    #navegador {
-        display: none;
-    }
-
+main section div.productos article:hover h4.descripcion {
+    display: block;
 }
 
+main section div.productos article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main section div.productos article:hover i {
+    transform: rotate(-90deg);
+    transition: .5s;
+}
+
+footer div i:hover {
+    color: #0022AA;
+}
+
+/* * * * * M E D I A   T A B L E T* * * * */
+
 @media (min-width: 361px) {
-
-    header {
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 45%;
-        /*margin: 5px;*/
-    }
-
-    div#menu {
-        display: none;
-    }
-
-    #logo-mercado {
+  
+    header div#logo-mercado {
         width: 30%;
         padding: 10px;
     }
@@ -239,43 +226,64 @@ footer i {
         width: 30%;
     }
 
-    div#compra {
+    header div#compra {
         width: 30%;
         font-size: 14px;
     }
 
-    header nav {
+    header nav#navegador {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: baseline;
-        justify-content:center
-    }
-
-    header nav {
+        justify-content: center;
         padding: 10px;
     }
 
-    header ul {
+    header nav#navegador ul {
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 2px;
         display: flex;
-        flex-direction: row;
+        justify-content: space-between;
     }
 
-    header ul li {
+    header nav#navegador ul li {
         padding: 5px;
+    }
+
+    header div#menu {
+        display: none;
+    }
+
+    main section div.productos article {
+        width: 45%;
     }
 
 }
 
+/* * * * * M E D I A   D E S K T O P* * * * */
+
 @media (min-width: 769px) {
-    article {
+    
+    header nav#navegador {
+        justify-content: space-between;
+    }
+
+    main section div.productos article {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         width: 23%;
     }
 
-    div#menu {
-        display: none;
+    footer div#padre {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    footer div.hijo {
+        width: 33%;
     }
 }
