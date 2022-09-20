@@ -26,14 +26,14 @@ header div#padre {
 header div#logo-mercado {
     width: 45%;
     padding: 10px;
-    flex-grow: 4;
+    flex-grow: 5;
 }
 
 header form#buscador {
     padding: 5px;
     display: flex;
     align-items: center;
-    flex-grow: 4;
+    flex-grow: 5;
     font-size: 11px;
     width: 45%;
 }
@@ -63,7 +63,7 @@ header form#buscador button {
 header div#compra {
     text-align: center;
     justify-content: center;
-    display: flex;
+    /*display: flex;*/
     flex-grow: 10;
 }
 
@@ -117,8 +117,6 @@ main section div.productos {
 main section div.productos article {
     margin: 10px 0px;
     background-color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 main section div.productos article img.producto {
@@ -139,8 +137,8 @@ main section div.productos article i {
     color: #39b54a;
     font-size: 16px;
     padding: 5px;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
@@ -149,15 +147,8 @@ main section div.productos article i {
     top: -15px;
 }
 
-main section div.productos article div.c-padre {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 main section div.productos article p.precio {
     font-size: 18px;
-    display: flex;
-    flex-direction: row;
     flex-grow: 3;
     padding: 5px;
 }
@@ -165,8 +156,6 @@ main section div.productos article p.precio {
 main section div.productos article p.descuento {
     font-size: 16px;
     color: #39b54a;
-    display: flex;
-    flex-direction: row;
     flex-grow: 7;
     padding: 5px;
 }
