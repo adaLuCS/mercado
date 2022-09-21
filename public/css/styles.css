@@ -162,8 +162,8 @@ main section div.productos article p.descuento {
 
 main section div.productos article h4.descripcion {
     font-size: 16px;
-    margin-left: 10px;
-    display: none;
+    margin: 10px;
+    visibility: hidden;
 }
 
 /* * * *  F O O T E R * * * */
@@ -186,7 +186,7 @@ footer div i {
 /* * * * * M O V I M I E N T O * * * * */
 
 main section div.productos article:hover h4.descripcion {
-    display: block;
+    visibility: visible;
 }
 
 main section div.productos article:hover {
